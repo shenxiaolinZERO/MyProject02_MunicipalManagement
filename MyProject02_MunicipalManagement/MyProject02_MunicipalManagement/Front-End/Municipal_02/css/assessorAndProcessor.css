@@ -1,0 +1,148 @@
+/*--------紧挨浏览器显示--------*/
+*{
+    margin-top: 0px;
+    padding: 0px;
+}
+.contain {
+    alignment: center;
+    background-color:#bcefff;
+}
+/*---------页头顶部部分---------*/
+.page-header{
+    background-color:#000;
+    margin: 0px 0px;
+    padding: 5px;
+    height:100px;
+    text-align:left;
+    /*font-family: 宋体;*/
+    /*color: #000;*/
+    /*width: 100%;*/
+
+
+}
+.page-header-left{
+    float: left;
+    width: 54.5%;
+    float: left;
+    margin-top: 5px;
+    font-family: 楷书;
+    font-size: 4.0em;
+    color: white;
+}
+.page-header-left .logo{
+    width: 25%;
+    float: left;
+    margin-right: 25%;
+}
+.page-header-left img{
+    /*vertical-align: top;*/
+    /*width:100px;*/
+}
+.page-header-left p{
+    font-size:x-large ;
+    text-align:left;
+}
+.page-header-right{
+    float: right;
+}
+.page-header-right span{
+    font-size: large;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+.page-header-right .login_link{
+    color: #00ACED;
+}
+
+/*--------------页中部分-------------*/
+.page-middle{
+    height: inherit;
+    /*background-color: #bce8f1;*/
+}
+.container{
+    width: 62%;
+    color:#bce8f1 ;
+}
+/*-------------页尾部分--------------*/
+.page-footer {
+    background:#999999;
+    padding: 2em 0;
+    text-align: center;
+
+}
+.footer li{
+    text-align:  -webkit-match-parent;
+}
+
+/*----------左侧操作选项-----------*/
+.bg {
+    text-align: center;
+    background-color: #bce8f1;
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+    width: auto;
+}
+
+.operation {
+    width: 15%;
+    float: left;
+    background-color: #5bc0de;
+
+}
+.waiting,.have{
+    padding:20px 5px 5px ;
+}
+/*.title{*/
+    /*padding: 20px 5px 10px;*/
+    /*font-size: x-large;*/
+    /*font-family: "Microsoft YaHei";*/
+    /*overflow: auto;*/
+    /*border-bottom: 3px solid #adadad;*/
+/*}*/
+div {
+    display: block;
+}
+ul, li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: -webkit-match-parent;
+
+}
+/*----------右侧具体内容-----------*/
+.operation_content {
+    width: 75%;
+    /*margin-left: 20px; */
+    float: left;
+    height: inherit;
+    /*background-color: #EEF3F5;*/
+
+}
+/*.tab-content>.tab-pane {*/
+    /*display: none;*/
+/*}*/
+/*.tab-pane {*/
+    /*display: none;*/
+/*}*/
+/*.fade {*/
+    /*opacity: 0;*/
+    /*-webkit-transition: opacity .15s linear;*/
+    /*-o-transition: opacity .15s linear;*/
+    /*transition: opacity .15s linear;*/
+/*}*/
+
+/*iframe {*/
+    /*width: 950px;*/
+    /*height: 1600px;*/
+    /*border-image-source: initial;*/
+    /*border-image-slice: initial;*/
+    /*border-image-width: initial;*/
+    /*border-image-outset: initial;*/
+    /*border-image-repeat: initial;*/
+    /*/!*border: 2px inset;*!/*/
+    /*border-top-width: 0px;*/
+    /*border-right-width: 0px;*/
+    /*border-bottom-width: 0px;*/
+    /*border-left-width: 0px;*/
+/*}*/

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/order_detail.css">-->
+    <link rel="stylesheet" href="css/assessorAndProcessor.css">
+    <link rel="stylesheet" href="css/superAdministrator.css">
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+       <!-- 页头部分--->
+<br>
+       <!-- 页中部分---->
+       <br>
+
+       <div class="loginbody">
+           <div class="container">
+               <div class="login">
+                   <div class="col-md-6 login-left">
+                       <img src="image/top_logo.jpg">
+                       <h3>市政管理通</h3>
+                   </div>
+                   <div class="col-md-6 login-right">
+                       <h3>请登录</h3>
+                       <form class="login-form">
+                           <div class="">
+                               <label>工号：</label>
+                               <input id="username" type="text" placeholder="请输入您的工号" data-toggle="popover-phnum"
+                                      data-placement="right"
+                                      data-content="请输入正确的工号">
+                               <div class="fr" style="margin-right: 10%"><span class=" usermsg msg"></span></div>
+
+                           </div>
+                           <div class="">
+                               <label>密码：</label>
+                               <input id="psw" type="password" placeholder="请输入您的密码" data-toggle="popover-psw"
+                                      data-placement="right"
+                                      data-content="密码不能为空">
+                               <div class="fr"style="margin-right: 10%"><span class=" pswmsg msg"></span></div>
+                           </div>
+                           <a class="forgot" href="#">忘记密码?</a><br/><br/>
+                          <div class="radio_status">
+                           <input type="radio" name="myStatus" value="superAdministrator">超级管理员
+                           <input type="radio" name="myStatus" value="assessor">审核员
+                           <input type="radio" name="myStatus" value="processor">接单员<br/>
+                          </div>
+                           <input id="login_btn" type="button" value="登录" onclick="login_submit();">
+                       </form>
+                   </div>
+                   <div class="clearfix"></div>
+               </div>
+           </div>
+       </div>
+
+        <!--<div class="container">-->
+            <!--<br>-->
+            <!--<div class="table table-bordered">-->
+
+          <!--<div class="col-md-5 login_left">-->
+              <!--<img src="image/top_logo.jpg">市政管理通-->
+          <!--</div>-->
+          <!--<div class="col-md-7 login_right">-->
+        <!--<form class="form-horizontal" role="form">-->
+            <!--<div class="login_form">-->
+                <!--<label for="staff_number" class="col-sm-2 control-label">工号：</label>-->
+                <!--<div class="col-sm-10">-->
+                    <!--<input type="text" class="form-control" id="staff_number"-->
+                           <!--placeholder="请输入您的工号">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="login_form">-->
+                <!--<label for="staff_password" class="col-sm-2 control-label">密码：</label>-->
+                <!--<div class="col-sm-10">-->
+                    <!--<input type="text" class="form-control" id="staff_password"-->
+                           <!--placeholder="请输入您的密码">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<a class="forgot" href="#">忘记密码?</a><br>-->
+            <!--<input id="login_btn" type="button" value="登录" onclick="login_submit();">-->
+
+        <!--</form>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!-- 页尾底部-->
+        <div class="container page-footer">
+            <!--<img src="images/pay.png" class="img-responsive" alt=""/>-->
+            <ul class="footer_nav">
+                <a href="#">首页</a>
+                <a href="#">投诉建议</a>
+                <a href="#">联系我们</a><br></li>
+            </ul>
+            <p class="copy">Copyright &copy; 2015.市政管理  &nbsp;&nbsp;&nbsp; All Rights Reserved.</p>
+        </div>
+</body>
+</html>

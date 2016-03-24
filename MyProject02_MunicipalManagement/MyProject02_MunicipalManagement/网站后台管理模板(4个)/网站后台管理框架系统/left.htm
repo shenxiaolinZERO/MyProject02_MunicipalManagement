@@ -1,0 +1,387 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="amcss.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+function show(i){     
+if (i.style.display == "none") {     
+		i.style.display = "";     
+	}else{     
+		i.style.display = "none";     
+	}     
+}	     
+</script>
+
+</head>
+
+<body>
+<table width="162" border="0" cellpadding="0" cellspacing="1">
+  <tr>
+    <td width="160" height=38 align=right class=font><div align="center"><a href="admin_main.asp" target="right"><img src="images/menu.gif" width="158" height="38" border="0"></a></div></td>
+  </tr>
+  <tr>
+    <td valign=tip>
+<!--=============-->
+<table width="100%" border="0" align=center cellpadding="0" cellspacing="1">
+<%if fla0=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a1)"> 
+            <div align="center"><strong>系统设置管理</strong></div></td></tr>
+  <tr>
+    <td>
+<DIV id=a1 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=admin_config.asp target="right">系统信息管理</a></td>
+          </tr>
+          <tr><td height=23 class="amrow">·<a href=admin_config_flag.asp target="right">系统权限管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=address/addoneadd.asp target="right">地区设置管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=hr/addoneadd.asp target="right">职位分类管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=trade/addoneadd.asp target="right">行业分类管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=admin_links.asp target="right">友情连接</a> <a href=admin_linkskey.asp target="right">待审</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=admin_NextSite.asp target="right">旗下网站管理</a></td></tr>
+ </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla1=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a2)"> 
+            <div align="center"><strong>企业会员管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a2 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+	      <tr><td height=23 class="amrow">·<a href=/Error.asp target="right" class="red">添加企业会员</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=yp/yp.asp?key2=0 target="right" class="red">注册待审会员</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=yp/yp.asp target="right">企业会员综合</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=yp/yp.asp?vip=4 target="right">试用会员（已）</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=yp/yp.asp?vip=3 target="right">试用会员（申）</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=yp/yp.asp?vip=6 target="right">普通会员（已）</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=yp/yp.asp?vip=5 target="right">普通会员（申）</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=yp/yp.asp?vip=2 target="right">VIP会员 （已）</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=yp/yp.asp?vip=1 target="right">VIP会员 （申）</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla2=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a3)"> 
+            <div align="center"><strong>个人简历管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a3 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=/Error.asp target="right" class="red">添加个人会员</a></td></tr>
+		  <tr><td height=23 class="amrow">·<a href=job/qz.asp?key1=yes target="right" class="red">待审简历管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=job/qz.asp target="right">综合简历管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=job/qz.asp?zc=yes target="right">正常简历管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=job/qz.asp?key3=yes target="right">正常推荐简历</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=job/qz.asp?gq=yes target="right">过期简历管理</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla3=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a4)"> 
+            <div align="center"><strong>院校联盟管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a4 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=school/school.asp?key=yes target="right" class="red">待审院校管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=school/school.asp?zc=yes target="right">正常院校管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=school/school.asp target="right">院校会员管理</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla4=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a5)"> 
+            <div align="center"><strong>猎头服务管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a5 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=hr/hr_qz.asp target="right" class="red">猎头服务管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=hr/hr_qz.asp target="right">猎头人才管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=hr/hr_addqz.asp target="right">猎头人才添加</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=hr/hr_zw.asp target="right">猎头职位管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=hr/hr_addzw.asp target="right">猎头职位添加</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla5=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a6)"> 
+            <div align="center"><strong>企业动态管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a6 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=news/news_sort.asp target="right">新闻分类管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=news/news.asp?key1=yes target="right" class="red">待审新闻管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=news/news_add.asp target="right">添加新闻动态</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=news/news.asp target="right">新闻综合管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=news/news.asp?zc=yes target="right">正常新闻管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=news/news.asp?key3=yes target="right">正常推荐管理</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla6=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a18)"> 
+            <div align="center"><strong>人力资讯管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a18 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=xxnews/news_sort.asp target="right">资讯分类管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=xxnews/news.asp?key1=yes target="right" class="red">待审资讯管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=xxnews/news_add.asp target="right">添加人力资讯</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=xxnews/news.asp target="right">资讯综合管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=xxnews/news.asp?zc=yes target="right">正常资讯管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=xxnews/news.asp?key3=yes target="right">正常推荐管理</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla7=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a7)"> 
+            <div align="center"><strong>企业招聘管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a7 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href="zp/job.asp?key1=yes"  target="right" class="red">待审招聘管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href="zp/job.asp"  target="right">综合招聘管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href="zp/job.asp?zc=yes" target="right">正常招聘管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href="zp/job.asp?key3=yes" target="right">正常推荐招聘</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href="zp/job.asp?gq=yes" target="right">过期招聘管理</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla8=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a8)"> 
+            <div align="center"><strong>招聘会管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a8 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=exhibit/exhibit.asp?key=0 target="right" class="red">待审招聘会</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=exhibit/exhibit.asp target="right">所有招聘会管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=exhibit/exhibit.asp?zc=yes target="right">正常招聘会</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=exhibit/exhibit.asp?key=2 target="right">正常推荐管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=exhibit/exhibit.asp?last=yes target="right">过期招聘会</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=exhibit/exhibit_add.asp target="right">招聘会添加</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla9=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a9)"> 
+            <div align="center"><strong>商务模版管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a9 style="DISPLAY: none">
+    <div align="left">
+<table width="100" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr><td height=20>·<a href=templet/cp_add.asp target="right">模板添加</a></td></tr>
+  <tr><td height=20>·<a href=templet/cp.asp target="right">模板管理</a></td></tr>
+</table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla10=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a10)"> 
+            <div align="center"><strong>站点意见反馈</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a10 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=admin_book.asp target="right">反馈查看</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla11=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a11)"> 
+            <div align="center"><strong>网站帮助文档</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a11 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=help/help_sort.asp target="right">帮助中心分类</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=help/help.asp target="right">帮助管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=help/help_add.asp target="right">帮助添加</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla12=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a17)"> 
+            <div align="center"><strong>编辑器管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a17 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=../jobedit/admin_style.asp target="right">样式管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=../jobedit/admin_DeCode.asp target="right">获取解释函数</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=../jobedit/admin_uploadfile.asp target="right">上传文件管理</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if%>
+<tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a28)"> 
+            <div align="center"><strong>邮件管理</strong></div></td>
+  </tr>
+ <tr><td>
+ <div id=a28 style="display:none ">
+ <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=/Error.asp target="right">群发邮件</a></td></tr>
+         </table>
+    </div></div>
+ </td>
+  </tr>
+  <%
+if fla13=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a12)"> 
+            <div align="center"><strong>管理员管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a12 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=administrator/administrator.asp target="right">管理员管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=administrator/flag.asp target="right">权限分配</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla14=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a13)"> 
+            <div align="center"><strong>数据库管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a13 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=/Error.asp target="right">数据库管理</a></td></tr>
+          <tr><td height=23 class="amrow">·<a href=System/aspcheck.asp target="right">服务器查看</a></td></tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if
+if fla15=1 then%>
+  <tr>
+          <td height=27 background="images/title.gif" style="cursor:hand" onClick="show(a14)"> 
+            <div align="center"><strong>站内广告管理</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a14 style="DISPLAY: none">
+    <div align="left">
+<table width="156" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr><td height=20>·<a href=ad/list.asp target="right">广告管理</a></td></tr>
+</table>
+    </div>
+</div>	</td>
+  </tr>
+<%end if%>
+
+  <tr><td height=27 background="images/admin_left_5.gif" style="cursor:hand" onClick="show(a15)"><div align="center"><strong>密码设置</strong></div></td>
+  </tr>
+  <tr>
+    <td>
+<DIV id=a15 style="DISPLAY: none">
+    <div align="left">
+      <table width="156" border="0" cellspacing="1" cellpadding="1" align="center">
+          <tr><td height=23 class="amrow">·<a href=admin_admin.asp target="right">密码修改</a></td>
+          </tr>
+          </table>
+    </div>
+</div>	</td>
+  </tr>
+
+  <tr><td height=27 background="images/admin_left_10.gif" style="cursor:hand" onClick="show(a16)"><div align="center"><strong>安全退出</strong></div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+<DIV id=a16 style="DISPLAY: none">
+<table width="156" border="0" cellspacing="1" cellpadding="1" align="center" bgcolor="#FFFFFF">
+  <tr><td height=23 class="amrow">·<a style="cursor:hand" onClick="if (confirm('你确定要退出系统吗？')){window.open('logout.asp','_parent')}">安全退出</a></td></tr>
+</table>
+</div>
+	</td>
+  </tr>
+</table>
+<!--=============-->	</td>
+  </tr>
+  <tr><td height=5 bgcolor="#FFFFFF"></td></tr>
+  <tr>
+    <td height=60 bgcolor="#FFFFFF" class="amrow"><strong>
+      <p align="left" style="line-height:180%">&nbsp;版权：<br>
+        &nbsp;<a href="http://www.yjys.net" target=_blank class=black>月亮屋工作室</a><br>
+  &nbsp;版本：<br>
+        &nbsp;人才V4.01 </strong></td>
+  </tr>
+  <tr>
+    <td height=3 bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+</table>

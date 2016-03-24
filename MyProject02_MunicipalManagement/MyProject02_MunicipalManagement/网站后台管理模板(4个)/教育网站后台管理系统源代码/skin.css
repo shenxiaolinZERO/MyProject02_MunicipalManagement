@@ -1,0 +1,47 @@
+﻿body { margin:5px auto; width:900px; font-size:10pt; font-family:"宋体", Verdana; font-style:normal; color:#1f3a87; }
+a:link { text-decoration:none; color:#1f3a87;}
+a:visited { text-decoration:none; color:#1f3a87;}
+a:hover { text-decoration:none; color:#ff0000;}
+
+/*登录*/
+.bg { background:url(ysmzadmin/image/loginbg1.jpg) no-repeat; background-position:center center;  background-color:#f2f6fb; width:100%; height:600px;}
+.subpic { background:url(ysmzadmin/image/subbg.jpg) repeat;}
+.pagebody {width:900px;}
+.pagebody1 {width:900px; height:485px; background:url(ysmzadmin/image/subbg.jpg) repeat; border-bottom:1px solid #ccc; border-left:1px solid #ccc;border-right:1px solid #ccc;}
+.label_1 { width:440px; float:left; text-align:right; margin-right:5px; clear:left; overflow:hidden; margin-top:253px; font-size:12pt}
+.textbox_1 { width:460px; float:right; text-align:left; clear:right; overflow:hidden; margin-top:250px;}
+.label_2 { width:440px; float:left; text-align:right; margin-right:5px; clear:left; overflow:hidden; margin-top:15px; font-size:12pt;}
+.textbox_2 { width:460px; float:right; text-align:left; clear:right; overflow:hidden; margin-top:10px;}
+.label_3 { width:440px; float:left; text-align:right; margin-right:5px; clear:left; overflow:hidden; margin-top:15px; font-size:12pt;}
+.textbox_3 { width:76px; float:left; left:440px; text-align:left; clear:right; overflow:hidden; margin-top:315px;}
+.label_4 { width:380px; float:right; text-align:left; clear:right; overflow:hidden; margin-top:15px;  font-size:12pt; margin-left:8px;}
+.ok { width:480px; float:left; text-align:right; margin-right:20px; clear:left; overflow:hidden; margin-top:15px; font-size:12pt;}
+.back { width:420px; float:right; text-align:left; clear:right;  overflow:hidden; margin-top:15px; font-size:12pt;}
+/*后台*/
+.houtai_bg { width:900px; height:100px; float:left; background:url(ysmzadmin/image/backgroud1.jpg); clear:left; overflow:hidden; border-left:1px solid #ccc; border-right:1px solid #ccc}
+.rongqi { width:100%; float:left; margin:0px; clear:left; height:427px;}
+.houtai_left { width:190px; height:427px; float:left; background:url(ysmzadmin/image/back.jpg); clear:left; overflow:hidden;}
+.houtai_left1 { width:190px; height:427px; float:left; background:url(ysmzadmin/image/back.jpg); clear:left; overflow:hidden; }
+.houtai_monu { height:25px; margin-top:60px; text-align:center}
+.houtai_monu1 { height:35px; text-align:center; padding-top:6px;}
+.houtai_exit { height:35px; text-align:center; padding-top:50px;}
+.houtai_right { width:708px; float:right; clear:left;  overflow:hidden;}
+.houtai_right1 { width:706px;float:right; clear:left;  overflow:hidden;}
+.rongqi a:link { text-decoration:none; color:#1f3a87;}
+.rongqi a:visited { text-decoration:none; color:#1f3a87;}
+.rongqi a:hover { text-decoration:none; color:#ff0000;}
+.houtai_right_top { width:100%;}
+.houtai_right_bottom {width:100%;}
+.houtai_right_title { line-height:70px; text-align:center; font-size:14pt; font-family:"楷体_GB2312"; font-weight:bold;}
+.houtai_right_left ul { width:293px; float:left; clear:left; overflow:hidden; list-style-type:none; margin:0px;}
+.houtai_right_right ul { width:415px; float:right; clear:right; overflow:hidden; list-style-type:none; margin:0px;}
+.houtai_right_leftli {  line-height:43px; text-align:right;}
+.houtai_right_rightli { height:30px; text-align:left; padding-left:20px; padding-top:8px; padding-bottom:5px;}
+.houtai_right_bottomok { width:330px; float:left; clear:both; text-align:right; margin-top:30px;}
+.houtai_right_bottomre { width:378px; float:right; clear:both; text-align:left; padding-left:40px; overflow:hidden; margin-top:30px;}
+.houtai_right_gonggao { margin-left:40px; margin-right:40px; padding-top:20px;}
+.houtai_right_gonggao1 { margin-left:40px; margin-right:40px;}
+.houtai_right_gonggao2 { margin-left:40px; margin-right:40px; padding-top:10px;}
+.houtai_right_pic { margin-left:40px; margin-right:40px;}
+.houtai_right_pic1 { margin-left:40px; margin-right:40px; margin-top:12px;}
+.houtai_right_pic2 { margin-left:40px; margin-right:40px; margin-top:5px;}

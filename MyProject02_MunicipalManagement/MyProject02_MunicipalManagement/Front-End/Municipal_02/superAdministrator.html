@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超级管理员界面</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/assessorAndProcessor.css">
+    <link rel="stylesheet" href="css/superAdministrator.css">
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!--头部 -->
+    <!--<div class="container page-header">-->
+        <!--<img src="image/top_logo.jpg "> 市政管理后台管理-->
+    <!--</div>-->
+
+    <!-- 中部内容-->
+    <div class="container page-middle">
+        <div class="assess">
+            <!-- 左侧-->
+            <div class="operation">
+                <div class="bg">
+                    <div class="title">
+                        <img src="">
+                        <p> 后台管理 </p>
+                    </div>
+                    <ul class="nav nav-tabs" id="assessor_choose">
+                        <li class="mana1 active">
+                            <a href="#manage_assessors" data-toggle="tab"  aria-expanded="true">管理审核员</a>
+                        </li>
+                        <li class="mana2">
+                            <a href="#manage_processors" data-toggle="tab" aria-expanded="true" >管理接单员</a>
+                        </li>
+                        <li class="mana3">
+                            <a href="#manage_faultTypes" data-toggle="tab" aria-expanded="true" >管理故障类型</a>
+                        </li>
+                        <li class="mana4">
+                            <a href="#manage_executiveBranchs" data-toggle="tab" aria-expanded="true" >管理执行部门</a>
+                        </li>
+                        <li class="mana5">
+                            <a href="#manage_loginInterface" data-toggle="tab" aria-expanded="true" >管理登录界面</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 右侧-->
+            <div class="operation_content">
+                <div id="myTabContent" class="tab-content">
+                    <div id="manage_assessors" class="tab-pane active">
+                        <iframe src="manage_assessors.html" name="ass" width="1300px" height="1600px" frameborder="0"></iframe>
+                    </div>
+                    <div id="manage_processors" class="tab-pane ">
+                        <iframe src="manage_processors.html" name="pro" width="1300px" height="1600px" frameborder="0"></iframe>
+                    </div>
+                    <div id="manage_faultTypes" class="tab-pane ">
+                        <iframe src="manage_faultTypes.html" name="fau" width="1300px" height="1600px" frameborder="0"></iframe>
+                    </div>
+                    <div id="manage_executiveBranchs" class="tab-pane ">
+                        <iframe src="manage_executiveBranchs.html" name="exe" width="1300px" height="1600px" frameborder="0"></iframe>
+                    </div>
+                    <div id="manage_loginInterface" class="tab-pane ">
+                        <iframe src="manage_loginInterface.html" name="exe" width="1300px" height="1600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页尾底部-->
+    <div class="container page-footer">
+        <!--<img src="images/pay.png" class="img-responsive" alt=""/>-->
+        <ul class="footer_nav">
+            <a href="#">首页</a>
+            <a href="#">投诉建议</a>
+            <a href="#">联系我们</a><br></li>
+        </ul>
+        <p class="copy">Copyright &copy; 2015.市政管理  &nbsp;&nbsp;&nbsp; All Rights Reserved.</p>
+    </div>
+    </body>
+</body>
+</html>
+
+
+
+

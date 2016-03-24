@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理故障类型界面</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/superAdministrator.css">
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--页头标题-->
+    <div class="manageFault_title">
+        <span>>>>>>管理故障类型</span>
+    </div>
+
+    <!-- 标签名-->
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active">
+            <a href="#lookFaultList" data-toggle="tab">
+                现有所有故障类型
+            </a>
+        </li>
+        <li><a href="#addFaultType" data-toggle="tab">添加故障类型</a></li>
+
+    </ul>
+
+    <!------------ 标签内容-------------------->
+    <div id="myTabContent" class="tab-content">
+        <!-- 查看所有故障类型-->
+        <div class="tab-pane fade in active" id="lookFaultList">
+            <div class="lookFau_tab_title">
+                <span class="col-md-4">故障编号</span>
+                <span class="col-md-4">故障名称</span>
+                <span class="col-md-4">操作</span>
+            </div>
+
+            <li class="lookFau_tab_detail">
+                <div class="col-md-4">
+                    F0001
+                </div>
+                <div class="col-md-4">
+                    道路交通故障
+                </div>
+                <div class="col-md-4">
+                    <a href="#">[编辑名称]</a>
+                    <a href="#">[设为无效]</a>
+                </div>
+            </li>
+            <li class="lookFau_tab_detail">
+                <div class="col-md-4">
+                    F0001
+                </div>
+                <div class="col-md-4">
+                    道路交通故障
+                </div>
+                <div class="col-md-4">
+                    <a href="#">[编辑名称]</a>
+                    <a href="#">[设为无效]</a>
+                </div>
+            </li>
+
+        </div>
+        <!-- 添加故障类型-->
+        <div class="tab-pane fade" id="addFaultType">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="fau_number" class="col-sm-2 control-label">故障编号：</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="fau_number"
+                               placeholder="请输入故障编号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fau_name" class="col-sm-2 control-label">故障名称：</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="fau_name"
+                               placeholder="请输入故障名称">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn  btn-success fau_add_btn">添加至故障类型列表</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

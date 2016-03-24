@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审核员界面</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/assessorAndProcessor.css">
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.js"></script>-->
+
+</head>
+<body>
+
+    <!--头部 -->
+    <div class="page-header">
+        <div class="container">
+            <div class="page-header-left">
+                市政管理后台管理
+                <!--<i class="icon-globe icon-3x"></i><p>市政管理后台管理</p>-->
+                <!--<img class="logo" src="image/top_logo.jpg">-->
+
+            </div>
+            <div class="page-header-right">
+                <span>欢迎您！张三</span>&nbsp; <a class="" href="">[退出登录]</a><br/>
+                <span>当前时间是：XXXX年XX月XX日</span>
+
+            </div>
+        </div>
+        <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="请输入搜索内容">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+    </div>
+    <br>
+
+    <!-- 中部内容-->
+   <div class="container page-middle">
+
+       <ul id="myTab" class="nav nav-tabs">
+           <li class="active">
+               <a href="#lookAssessorList" data-toggle="tab">
+                   浏览审核情况
+               </a>
+           </li>
+           <li><a href="#addAssessor" data-toggle="tab">发布公告</a></li>
+           <li><a href="#addAssessor" data-toggle="tab">个人中心</a></li>
+       </ul>
+
+    <div class="assess">
+        <!-- 左侧-->
+        <div class="operation">
+           <div class="bg">
+              <div class="title">
+                  <!--<img src="">-->
+                  <p><i class="icon-cog icon-1x"></i> &nbsp;后台管理 </p>
+              </div>
+              <ul class="nav nav-tabs" id="assessor_choose">
+                  <li class="waiting active">
+                      <a href="#waiting_assess" data-toggle="tab"  aria-expanded="true">待审核</a>
+                  </li>
+                  <li class="have">
+                      <a href="#have_assessed" data-toggle="tab" aria-expanded="true" >已审核</a>
+                  </li>
+              </ul>
+           </div>
+        </div>
+
+            <!-- 右侧-->
+            <div class="operation_content">
+            <div id="myTabContent" class="tab-content">
+                <div id="waiting_assess" class="tab-pane active">
+                  <iframe src="waiting_assess.html" name="waiting" width="1300px" height="1600px" frameborder="0"></iframe>
+                </div>
+                <div id="have_assessed" class="tab-pane ">
+                  <iframe src="have_assessed.html" name="have" width="1300px" height="1600px" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- 页尾底部-->
+    <div class=" page-footer">
+        <!--<img src="images/pay.png" class="img-responsive" alt=""/>-->
+        <ul class="footer_nav">
+            <a href="#">首页</a>
+            <a href="#">投诉建议</a>
+            <a href="#">联系我们</a><br></li>
+        </ul>
+        <p class="copy">Copyright &copy; 2015.市政管理  &nbsp;&nbsp;&nbsp; All Rights Reserved.</p>
+    </div>
+</body>
+</html>

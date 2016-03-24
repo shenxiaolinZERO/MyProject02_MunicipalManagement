@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接单员界面</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/assessorAndProcessor.css">
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.js"></script>-->
+
+</head>
+<body>
+    <!--头部 -->
+    <div class="container  head_logo">
+
+    </div>
+
+    <br>
+    <!-- 内容-->
+    <div class="container main">
+        <div class="process">
+            <!-- 左侧-->
+            <div class="operation">
+                <div class="bg">
+                    <div class="title">
+                        <img src="">
+                        <p> 后台管理 </p>
+                    </div>
+                    <ul class="nav nav-tabs" id="processor_choose">
+                        <li class="waiting active">
+                            <a href="#waiting_process" data-toggle="tab"  aria-expanded="true">待处理</a>
+                        </li>
+                        <li class="have">
+                            <a href="#is_processing" data-toggle="tab" aria-expanded="true" >正在处理</a>
+                        </li>
+                        <li class="have">
+                            <a href="#have_processed" data-toggle="tab" aria-expanded="true" >已处理</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右侧-->
+            <div class="operation_content">
+                <div id="myTabContent" class="tab-content">
+                    <div id="waiting_process" class="tab-pane active">
+                        <iframe src="waiting_process.html" name="waiting" width="1300px" height="1600px" frameborder="0"></iframe>
+                    </div>
+                    <div id="is_processing" class="tab-pane ">
+                        <iframe src="is_processing.html" name="is" width="1300px" height="1600px" frameborder="0"></iframe>
+                    </div>
+                    <div id="have_processed" class="tab-pane ">
+                        <iframe src="have_processed.html" name="have" width="1300px" height="1600px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页尾底部-->
+    <div class="container page-footer">
+        <!--<img src="images/pay.png" class="img-responsive" alt=""/>-->
+        <ul class="footer_nav">
+            <a href="#">首页</a>
+            <a href="#">投诉建议</a>
+            <a href="#">联系我们</a><br></li>
+        </ul>
+        <p class="copy">Copyright &copy; 2015.市政管理  &nbsp;&nbsp;&nbsp; All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
