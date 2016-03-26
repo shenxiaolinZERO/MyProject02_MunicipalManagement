@@ -7,7 +7,7 @@
         <link href="css/smartMenu.css" type="text/css" rel="stylesheet">
         <title>市政后台管理—审核员</title>
     </head>
-    <body>
+    <body onload="startTime()">
     	<div id="admin">
     		<div class="ad-menu" id="ad-menu">
                 <div class="ad-logo"><img src="image/top_logo.jpg" height="150" width="150"></div>
@@ -146,8 +146,36 @@
                             <div class="ad-welcom">
                                 <div class="ad-wel-img"><img src="image/top_logo.jpg" height="36" width="36"></div>
                                 <div class="ad-wel-text">
-                                    <div class="font-wel">欢迎您！<strong>沈小0</strong></div>
-                                    <div class="font-wel"><a href="javascript:;"><strong>【退出】</strong></a></div>
+                                    <div class="font-wel">欢迎您！<strong>沈小0</strong><a href="javascript:;"><strong>【退出】</strong></a></div>
+                                    <div id="setDateTime"></div>
+                                    <script>
+                                        function startTime(){
+                                            var today=new Date();
+                                            var y=today.getFullYear();
+                                            var mon=today.getMonth();
+                                            var d=today.getDay();
+                                            var h=today.getHours();
+                                            var m=today.getMinutes();
+
+                                            var s=today.getSeconds();
+                                            m=checkTime(m);
+                                            s=checkTime(s);
+
+                                            document.getElementById("setDateTime").innerHTML="现在时间："+h+":"+m+":"+s;
+
+                                            t=setTimeout(function(){startTime();},1000);
+                                            //document.write(today);
+                                        };
+
+                                        function checkTime(i){
+                                            if(i<10) {
+                                                i="0"+i;
+                                            }
+                                            return i;
+                                        };
+
+                                    </script>
+
                                 </div>
                             </div>
                         </div>
@@ -184,6 +212,7 @@
         <script type="text/javascript" src="js/maintabs.js"></script>
         <script type="text/javascript" src="js/jquery-smartMenu-min.js"></script>
         <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+        <script type="text/javascript" src="js/setDateTime.js"></script>
         <script type="text/javascript">
             $(function(){
                 $(".ad-menu").niceScroll({cursorborder:"0 none",cursorcolor:"#1a1a19",cursoropacitymin:"0",boxzoom:false});
