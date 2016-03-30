@@ -14,6 +14,13 @@
     <!--<script src="js/jquery.lightTreeview.min.js"></script>-->
     <script src="js/jquery.lightTreeview.pack.js"></script>
     <script src="js/waiting_assess.js"></script>
+    <!--<script >-->
+        <!--var Modal = function (element, options) {-->
+            <!--this.options = options;-->
+            <!--this.$element = $(element).delegate(&#39;[data-dismiss="modal"]:first&#39;, &#39;click.dismiss.modal&#39;, $.proxy(this.hide, this))-->
+            <!--this.options.remote && this.$element.find(&#39;.modal-body&#39;).load(this.options.remote)-->
+        <!--}-->
+    <!--</script>-->
 
 </head>
 <body>
@@ -56,7 +63,7 @@
             </button>
             <div class="modal fade" id="assess" tabindex="-1" role="dialog"
                  aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog" style="width:1000px ">
+                <div class="modal-dialog" style="width:1000px ;height: 2000px;">
                     <div class="modal-content">
                         <div class="modal-header" style="height: 50px">
                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: red;">
@@ -158,8 +165,7 @@
                                             <button type="button" class="btn btn-primary">
                                                 保存修改
                                             </button>
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                                            </button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                                         </div>
                                     </div><!-- /.modal-content -->
                                 </div><!-- /.modal -->
@@ -183,7 +189,7 @@
                                              </select>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                            <button type="button" class="btn btn-primary">
                                                 保存修改
                                             </button>
                                             <button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -212,7 +218,7 @@
                                             </select>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                            <button type="button" class="btn btn-primary">
                                                 保存修改
                                             </button>
                                             <button type="button" class="btn btn-default" data-dismiss="modal">关闭
